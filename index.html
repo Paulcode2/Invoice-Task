@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Invoice Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="new.css" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="headerbar">
+      <div class="header">
+          <span><img
+            src="images/LogoMakr-8QzcOW(1).png"
+            alt=""
+            id="logo"
+          />
+          <h3>VANTAGE</h3>
+        </span>
+        <input type="text" class="search_term" placeholder="Search....">
+        <button type="submit" class="SearchHeader">
+          <i class="fa fa-search"></i>
+        </button>
+
+        <div class="right_area">
+          <img
+            src="images/238959777_2739617689669851_6307169454031968997_n.jpg"
+            alt=""
+            class="profile_image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="sidebar">
+        <h6>Admin Tools</h6>
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-circle-dot"></i><span>Overview</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-bag-shopping"></i><span>Products</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-address-card"></i><span>Campaigns</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-calendar-days"></i><span>Schedule</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-money-bill"></i><span>Payouts</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-file-lines"></i><span>Statements</span></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fa-solid fa-gear"></i><span>Settings</span></a
+            >
+          </li>
+        </ul>
+        <div class="insights">
+          <h6>Insights</h6>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-message"></i><span>Inbox</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-bell"></i><span>Notification</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-comment-dots"></i
+                ><span>Comments</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main_content">
+        <div class="info">
+          <div id="table">
+            <h3>Invoice History</h6>
+            <table>
+              <tr>
+                <th>
+                  <form action="/action_page.php">
+                    <select name="days" id="days">
+                      <option value="Last 30 days">Last 30 days</option>
+                      <option value="Last 20 days">Last 20 days</option>
+                      <option value="Last 10 days">Last 30 days</option>
+                    </select>
+                  </form>
+                </th>
+                <th>
+                  <form action="/action_page.php">
+                    <select name="days" id="days">
+                      <option value="Aug 2020">Aug 2020</option>
+                      <option value="Sept 2020">Sept 2020</option>
+                      <option value="July 2020">July 2020</option>
+                    </select>
+                  </form>
+                </th>
+                <th>
+                 
+                  <input type="text" class="searchTerm" placeholder="Search">
+                </th>
+                <th>
+                  <button type="submit" class="searchButton">
+                    Search
+                  </button>
+                </th>
+                <th>
+                  <a href="#" class="icons"><i class="fa-solid fa-pen-to-square"></i></a>
+                </th>
+                <th>
+                  <a href="#" class="icons"><i class="fa-solid fa-trash" id="icons"></i></a>
+                </th>
+              </tr>
+              <tr>
+                <th><input class="checkbox" type="checkbox" />Transaction</th>
+                <th>Payout Method</th>
+                <th>Status</th>
+                <th>Data Processed</th>
+                <th>Taxes</th>
+              </tr>
+              <tr>
+                <td>
+                  <input class="checkbox" type="checkbox" />
+                  <h4 style="text-align: center; margin-top: 0px">$1,532.5</h4>
+                  <h6 style="text-align: center; font-weight: 100">
+                    $12.00 transaction fee
+                  </h6>
+                </td>
+                <td><h4 style="text-align: center">Paypal</h4></td>
+                <td>
+                  <h4
+                    style="
+                      background: rgb(93, 254, 93);
+                      text-align: center;
+                      color: white;
+                    "
+                    class="paid"
+                  >
+                    Paid
+                  </h4>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">
+                    18 Aug 2020
+                  </h4>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">$1.49</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="checkbox" type="checkbox" />
+                  <h4 style="text-align: center; margin-top: 0px">$1,200.0</h4>
+                  <h6 style="text-align: center; font-weight: 100">
+                    $6.00 transaction fee
+                  </h6>
+                </td>
+                <td><h4 style="text-align: center">Paypal</h4></td>
+                <td>
+                  <h4
+                    style="
+                      background: rgb(93, 254, 93);
+                      text-align: center;
+                      color: white;
+                    "
+                    class="paid"
+                  >
+                    Paid
+                  </h4>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">
+                    18 Aug 2020
+                  </h4>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">$2.49</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="checkbox" type="checkbox" />
+                  <h4 style="text-align: center; margin-top: 0px">$3,100.5</h4>
+
+                  <h6 style="text-align: center; font-weight: 100">
+                    $31.00 transaction fee
+                  </h6>
+                </td>
+                <td><h4 style="text-align: center">Paypal</h4></td>
+                <td>
+                  <h4
+                    style="
+                      background: rgb(93, 254, 93);
+                      text-align: center;
+                      color: white;
+                    "
+                    class="paid"
+                  >
+                    Paid
+                  </h4>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">
+                    18 Aug 2020
+                  </h4>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">$1.49</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="checkbox" type="checkbox" />
+                  <h4 style="text-align: center; margin-top: 0px">$350.0</h4>
+
+                  <h6 style="text-align: center; font-weight: 100">
+                    $3.00 transaction fee
+                  </h6>
+                </td>
+                <td><h4 style="text-align: center">Paypal</h4></td>
+                <td>
+                  <h4
+                    style="
+                      background: rgb(93, 254, 93);
+                      text-align: center;
+                      color: white;
+                    "
+                    class="paid"
+                  >
+                    Paid
+                  </h4>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">
+                    18 Aug 2020
+                  </h4>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">$5.49</h4>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input class="checkbox" type="checkbox" />
+                  <h4 style="text-align: center; margin-top: 0px">$1,200.5</h4>
+                  <h6 style="text-align: center; font-weight: 100">
+                    $12.00 transaction fee
+                  </h6>
+                </td>
+                <td><h4 style="text-align: center">Paypal</h4></td>
+                <td>
+                  <h5
+                    style="
+                      background: rgb(93, 254, 93);
+                      text-align: center;
+                      color: white;
+                    "
+                    class="paid"
+                  >
+                    Paid
+                  </h5>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">
+                    18 Aug 2020
+                  </h4>
+                </td>
+                <td>
+                  <h4 style="text-align: center; font-weight: 100">$2.49</h4>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
